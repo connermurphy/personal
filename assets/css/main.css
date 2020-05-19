@@ -357,6 +357,10 @@ textarea.form-control {
   width: 50px;
 }
 
+#website {
+  display: none !important;
+}
+
 #form--msg-status {
   color: #0E0004;
 }
