@@ -107,6 +107,7 @@ nav .nav-item {
 }
 nav .nav-item .nav-link {
   position: relative;
+  display: inline-block;
   color: #0E0004;
   font-family: Georgia, serif;
   text-transform: uppercase;

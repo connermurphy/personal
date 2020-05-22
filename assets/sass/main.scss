@@ -165,6 +165,7 @@ nav {
         .nav-link {
 
             position: relative;
+            display: inline-block;
             color: $darkColour;
             @include georgiaRegular();
             text-transform: uppercase;

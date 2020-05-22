@@ -41,6 +41,7 @@ $(document).ready(() => {
         let nameVal = $("#form--name").val();
         let emailVal = $("#form--email").val();
         let messageVal = $("#form--message").val();
+        let websiteVal = $("#website").val();
 
         $.ajax({
 
@@ -49,7 +50,8 @@ $(document).ready(() => {
             "data" : {
                 name : nameVal,
                 email : emailVal,
-                message : messageVal
+                message : messageVal,
+                website : websiteVal
             },
             success : function(res) {
                 
