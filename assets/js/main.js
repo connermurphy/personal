@@ -51,13 +51,18 @@ $(document).ready(() => {
                 name : nameVal,
                 email : emailVal,
                 message : messageVal,
-                website : websiteVal
+                website : websiteVal,
+                grecaptcha : grecaptcha.getResponse()
             },
             success : function(res) {
                 
                 if (res === "1") {
                     //success
                     $("#form--msg-status").text("Email sent successfully");
+                } else if (res === "2") {
+
+                    $("#form--msg-status").text("Captcha verification failed. Please try again!");
+
                 } else {
                     $("#form--msg-status").html("Error sending email. Send it over to <b>enquiry@connermurphy.net</b>");
                     console.log(res);
