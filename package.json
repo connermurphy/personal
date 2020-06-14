@@ -1,0 +1,22 @@
+{
+  "name": "personal",
+  "version": "1.0.0",
+  "description": "Code base for my personal site.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connermurphy/personal.git"
+  },
+  "author": "C. Murphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/connermurphy/personal/issues"
+  },
+  "homepage": "https://github.com/connermurphy/personal#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
