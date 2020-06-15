@@ -3,4 +3,4 @@ php/
 node_modules/
 css/
 assets/js/
-.package-lock.json
+package-lock.json
