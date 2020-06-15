@@ -1,3 +1,5 @@
 .DS_Store
 php/
 node_modules/
+assets/css/
+assets/js/
