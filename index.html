@@ -27,13 +27,38 @@
     <link href="assets/css/main.css" rel="stylesheet" />
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <title>Conner Murphy - Website Developer</title>
 
 </head>
 
 <body>
+
+    <div class="modal" tabindex="-1" role="dialog" id="project-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="project--carousel">
+
+                    </div>
+                    <p class="modal-sub text-black-50 mt-5"></p>
+                    <p class="text-black-50 mt-2">
+                        Languages Used:
+                    </p>
+                    <ul class="project--langs">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="wrapper">
 
@@ -96,7 +121,7 @@
 
                         <div class="col-12 col-md-12 col-lg-6 work--item my-2 my-md-0">
                             <div class="work--item-img">
-                                <img src="assets/img/work/awig.png" alt="A Weekend In Glasgow Website"
+                                <img src="assets/img/work/awig/awig.png" alt="A Weekend In Glasgow Website"
                                     draggable="false" />
                             </div>
                             <div class="work--item-info">
@@ -108,11 +133,23 @@
 
                         <div class="col-12 col-md-12 col-lg-6 work--item my-2 my-md-0">
                             <div class="work--item-img">
-                                <img src="assets/img/work/jinxx.png" alt="Jinxx Portfolio Website" draggable="false" />
+                                <img src="assets/img/work/jinxx/jinxx.png" alt="Jinxx Portfolio Website"
+                                    draggable="false" />
                             </div>
                             <div class="work--item-info">
                                 <h3>Jinxx - Portfolio</h3>
                                 <a href="https://jinxx.cc/" target="_blank" class="btn btn-primary">View Site</a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-6 work--item my-2 my-md-0">
+                            <div class="work--item-img">
+                                <img src="assets/img/work/spectral/spectral.png" alt="Spectral Radio"
+                                    draggable="false" />
+                            </div>
+                            <div class="work--item-info">
+                                <h3>Spectral Radio</h3>
+                                <a href="http://demo.connermurphy.net/spectral/" target="_blank" class="btn btn-primary">View Site</a>
                             </div>
                         </div>
 
@@ -226,7 +263,8 @@
                                         <textarea class="form-control" name="message" placeholder-val="0"
                                             id="form--message" placeholder="" required></textarea>
                                     </div>
-                                    <div class="g-recaptcha" data-sitekey="6LeFSaMZAAAAAHx0GFvd_ZZ2-0SjlHLhtFFc5VOm"></div>
+                                    <div class="g-recaptcha" data-sitekey="6LeFSaMZAAAAAHx0GFvd_ZZ2-0SjlHLhtFFc5VOm">
+                                    </div>
                                     <div class="col-12 my-3 pl-0 ml-0">
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
@@ -249,9 +287,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
 
             </div>
@@ -275,7 +310,11 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/main-min.js"></script>
+    <script>
+        $(document).scrollTop(0);
+    </script>
 
 </body>
 
