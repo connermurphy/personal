@@ -562,6 +562,23 @@ footer {
     margin-bottom: .25em;
 }
 
+.footer--icon {
+    
+    display: inline-block;
+
+    i {
+
+        font-size: 1.75em;
+        margin: 0 .35em;        
+        opacity: .75;
+        color: #0e0004 !important;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
 //Footer 
 
 //Wrapper
