@@ -38,12 +38,15 @@ $(document).ready(() => {
             desc: "The landing page plays live music with action buttons and displays some information about the radio station.",
             photos: [
                 "./assets/img/work/spectral/spectral.png",
-                "./assets/img/work/spectral/spectral_2.png"
+                "./assets/img/work/spectral/spectral_2.png",
+                "./assets/img/work/spectral/spectral_3.png"
             ],
             langs: [
                 "HTML",
                 "CSS / SASS / TailwindCSS",
-                "JS / jQuery"
+                "JS / jQuery",
+                "PHP",
+                "Discord API"
             ]
         },
     ];
