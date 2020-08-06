@@ -6,9 +6,9 @@ $(document).ready(() => {
             title: "A Weekend In Glasgow",
             desc: "Built as part of a team working exercise for college, this prototype website showcased 5 things to do in Glasgow.",
             photos: [
-                "./assets/img/work/awig/awig.png",
-                "./assets/img/work/awig/awig_2.png",
-                "./assets/img/work/awig/awig_3.png"
+                "./assets/img/work/awig/awig.webp",
+                "./assets/img/work/awig/awig_2.webp",
+                "./assets/img/work/awig/awig_3.webp"
             ],
             langs: [
                 "HTML",
@@ -21,9 +21,9 @@ $(document).ready(() => {
             title: "Jinxx - Portfolio",
             desc: "Commissioned to build a fully functional portfolio website for a social media manager.",
             photos: [
-                "./assets/img/work/jinxx/jinxx.png",
-                "./assets/img/work/jinxx/jinxx_2.png",
-                "./assets/img/work/jinxx/jinxx_3.png",
+                "./assets/img/work/jinxx/jinxx.webp",
+                "./assets/img/work/jinxx/jinxx_2.webp",
+                "./assets/img/work/jinxx/jinxx_3.webp",
             ],
             langs: [
                 "HTML",
@@ -37,9 +37,9 @@ $(document).ready(() => {
             title: "Spectral Radio",
             desc: "The landing page plays live music with action buttons and displays some information about the radio station.",
             photos: [
-                "./assets/img/work/spectral/spectral.png",
-                "./assets/img/work/spectral/spectral_2.png",
-                "./assets/img/work/spectral/spectral_3.png"
+                "./assets/img/work/spectral/spectral.webp",
+                "./assets/img/work/spectral/spectral_2.webp",
+                "./assets/img/work/spectral/spectral_3.webp"
             ],
             langs: [
                 "HTML",
@@ -49,6 +49,21 @@ $(document).ready(() => {
                 "Discord API"
             ]
         },
+        {
+            id: 3,
+            title: "URL Shortener",
+            desc: "This demo project was built to test my knowledge of a simple API built using C# / ASP.NET Core.",
+            photos: [
+                "./assets/img/work/shorten/shorten.webp",
+            ],
+            langs: [
+                "HTML",
+                "CSS / SASS / TailwindCSS",
+                "C# / ASP.NET Core",
+                "MongoDB",
+                "Nginx"
+            ]
+        },        
     ];
 
     let slick = 0;
@@ -59,27 +74,28 @@ $(document).ready(() => {
     let navbarTogglerTwo = $("#toggler--2");
     let navbarTogglerThree = $("#toggler--3");
 
-    $(document).on("scroll", () => {
+    $(document).on("scroll", function() {
 
-        if ($(document).scrollTop() > $("#stats--section").offset().top - 200) {
+        if ($("#work--section").visible(true)) {
+            $(".work--item").eq(0).addClass("fadeIn").css("animation-delay", ".25s");
+            $(".work--item").eq(1).addClass("fadeIn").css("animation-delay", ".5s");
+            $(".work--item").eq(2).addClass("fadeIn").css("animation-delay", ".75s");
+            $(".work--item").eq(3).addClass("fadeIn").css("animation-delay", "1s");
+        }
+
+        if ($("#stats--section").visible(true)) {
             countStatUp($("#sites--produced > .stats--number"));
             countStatUp($("#clients--satisfied > .stats--number"));
             countStatUp($("#websites--live > .stats--number"));
         }
 
-        if ($(document).scrollTop() > $("#work--section").offset().top - 200) {
-            $(".work--item").eq(0).addClass("fadeIn").css("animation-delay", ".25s");
-            $(".work--item").eq(1).addClass("fadeIn").css("animation-delay", ".5s");
-            $(".work--item").eq(2).addClass("fadeIn").css("animation-delay", ".75s");
-        }
-
-        if ($(document).scrollTop() > $("#service--section").offset().top - 200) {
+        if ($("#service--section").visible(true)) {
             $(".service--item").eq(0).attr("id", "animate--service-1");
             $(".service--item").eq(1).attr("id", "animate--service-2");
             $(".service--item").eq(2).attr("id", "animate--service-3");
         }
 
-        if ($(document).scrollTop() > $("#contact--section").offset().top - 200) {
+        if ($("#contact--section").visible(true)) {
             setTimeout(function () {
                 displayPlaceholder($("#form--name"), "John Doe");
                 displayPlaceholder($("#form--email"), "johndoe@mail.com");
