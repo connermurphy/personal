@@ -6,9 +6,9 @@ $(document).ready(() => {
             title: "A Weekend In Glasgow",
             desc: "Built as part of a team working exercise for college, this prototype website showcased 5 things to do in Glasgow.",
             photos: [
-                "./assets/img/work/awig/awig.webp",
-                "./assets/img/work/awig/awig_2.webp",
-                "./assets/img/work/awig/awig_3.webp"
+                "./assets/img/work/awig/awig.jpg",
+                "./assets/img/work/awig/awig_2.jpg",
+                "./assets/img/work/awig/awig_3.jpg"
             ],
             langs: [
                 "HTML",
@@ -21,9 +21,9 @@ $(document).ready(() => {
             title: "Jinxx - Portfolio",
             desc: "Commissioned to build a fully functional portfolio website for a social media manager.",
             photos: [
-                "./assets/img/work/jinxx/jinxx.webp",
-                "./assets/img/work/jinxx/jinxx_2.webp",
-                "./assets/img/work/jinxx/jinxx_3.webp",
+                "./assets/img/work/jinxx/jinxx.jpg",
+                "./assets/img/work/jinxx/jinxx_2.jpg",
+                "./assets/img/work/jinxx/jinxx_3.jpg",
             ],
             langs: [
                 "HTML",
@@ -37,9 +37,9 @@ $(document).ready(() => {
             title: "Spectral Radio",
             desc: "The landing page plays live music with action buttons and displays some information about the radio station.",
             photos: [
-                "./assets/img/work/spectral/spectral.webp",
-                "./assets/img/work/spectral/spectral_2.webp",
-                "./assets/img/work/spectral/spectral_3.webp"
+                "./assets/img/work/spectral/spectral.jpg",
+                "./assets/img/work/spectral/spectral_2.jpg",
+                "./assets/img/work/spectral/spectral_3.jpg"
             ],
             langs: [
                 "HTML",
@@ -54,7 +54,7 @@ $(document).ready(() => {
             title: "URL Shortener",
             desc: "This demo project was built to test my knowledge of a simple API built using C# / ASP.NET Core.",
             photos: [
-                "./assets/img/work/shorten/shorten.webp",
+                "./assets/img/work/shorten/shorten.jpg",
             ],
             langs: [
                 "HTML",
