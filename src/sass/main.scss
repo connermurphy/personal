@@ -203,6 +203,11 @@ nav {
     }
 }
 
+.navbar {
+
+    z-index: 99999 !important;
+}
+
 .navbar-toggler {
 
     position: relative;
